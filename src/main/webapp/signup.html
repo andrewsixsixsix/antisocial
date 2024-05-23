@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Antisocial | Signup</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/signup.css"/>
+</head>
+<body>
+<header>
+    <a href="#">Antisocial</a>
+    <div class="header-links">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+    </div>
+</header>
+<h1>Signup</h1>
+<form method="post" action="/signup">
+    <div class="field">
+        <label for="first-name">First name:</label>
+        <input id="first-name" type="text" name="firstName" required/>
+    </div>
+    <div class="field">
+        <label for="last-name">Last name:</label>
+        <input id="last-name" type="text" name="lastName" required/>
+    </div>
+    <div class="field">
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" required/>
+    </div>
+    <div class="field">
+        <label for="date-of-birth">Date of birth:</label>
+        <input id="date-of-birth" type="date" name="dateOfBirth" required/>
+    </div>
+    <div class="field">
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" required/>
+    </div>
+    <input type="submit" class="submit" value="Sign Up"/>
+</form>
+</body>
+</html>

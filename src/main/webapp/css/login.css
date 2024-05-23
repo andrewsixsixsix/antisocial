@@ -1,0 +1,51 @@
+a {
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+form {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+header {
+    align-items: center;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.field {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.submit {
+    align-self: center;
+}
