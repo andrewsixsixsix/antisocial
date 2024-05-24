@@ -1,7 +1,5 @@
 # Antisocial
 
----
-
 ### Technologies
 - Jakarta Servlet
 - JSP
@@ -50,7 +48,13 @@ Verify that Docker container with application is up and running:
 docker ps
 ```
 
-Now you should be able to see the content under http://localhost:8080/ URL in your browser.
+Now you should be able to see the content under http://localhost:8080/antisocial URL in your browser.
+
+Restart the application:
+
+```shell
+./scripts/restart.sh
+```
 
 Stop the application:
 

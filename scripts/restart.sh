@@ -1,0 +1,1 @@
+./scripts/stop.sh && ./scripts/cleanup.sh && ./scripts/start.sh
