@@ -1,5 +1,6 @@
 package com.antisomething.antisocial.servlet;
 
+import com.antisomething.antisocial.dto.SignupDTO;
 import com.antisomething.antisocial.util.RequestBodyMapper;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -14,6 +15,7 @@ public final class SignupServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
         Map<String, String> body = RequestBodyMapper.map(request);
+        SignupDTO signup = SignupDTO.from(body);
 
         response.setStatus(HttpServletResponse.SC_OK);
         response.reset();

@@ -4,6 +4,8 @@ import jakarta.servlet.http.HttpServletRequest;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +22,7 @@ public final class RequestBodyMapper {
     private static Map<String, String> formUrlEncoded(HttpServletRequest request) {
         String[] params;
         try (BufferedReader reader = request.getReader()) {
-            params = reader.readLine().split("&");
+            params = URLDecoder.decode(reader.readLine(), StandardCharsets.UTF_8).split("&");
         } catch (IOException ex) {
             throw new RuntimeException("Failed to get BufferedReader from request");
         }
