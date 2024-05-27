@@ -16,6 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jakarta-servlet-api.version>6.0.0</jakarta-servlet-api.version>
         <jakarta-jsp-api.version>3.1.1</jakarta-jsp-api.version>
+        <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
     </properties>
 
     <build>
@@ -46,6 +47,13 @@
             <version>${jakarta-jsp-api.version}</version>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>
