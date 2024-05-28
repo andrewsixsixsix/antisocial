@@ -1,5 +1,6 @@
 package com.antisomething.antisocial.util;
 
+import com.antisomething.antisocial.constant.HttpContentType;
 import jakarta.servlet.http.HttpServletRequest;
 
 import java.io.BufferedReader;
@@ -14,7 +15,7 @@ public final class RequestBodyMapper {
     public static Map<String, String> map(HttpServletRequest request) {
         String contentType = request.getContentType();
         return switch (contentType) {
-            case "application/x-www-form-urlencoded" -> formUrlEncoded(request);
+            case HttpContentType.FORM_URLENCODED -> formUrlEncoded(request);
             default -> throw new IllegalArgumentException("Unsupported request content type");
         };
     }
