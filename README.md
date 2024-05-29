@@ -2,7 +2,7 @@
 
 ### Technologies
 - Jakarta Servlet
-- JSP
+- Freemarker
 - JDBC
 - PostgreSQL
 - JUnit

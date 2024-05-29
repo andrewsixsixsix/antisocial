@@ -15,7 +15,7 @@
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jakarta-servlet-api.version>6.0.0</jakarta-servlet-api.version>
-        <jakarta-jsp-api.version>3.1.1</jakarta-jsp-api.version>
+        <freemarker.version>2.3.32</freemarker.version>
         <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
     </properties>
 
@@ -40,12 +40,11 @@
             <version>${jakarta-servlet-api.version}</version>
             <scope>provided</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp/jakarta.servlet.jsp-api -->
+        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
         <dependency>
-            <groupId>jakarta.servlet.jsp</groupId>
-            <artifactId>jakarta.servlet.jsp-api</artifactId>
-            <version>${jakarta-jsp-api.version}</version>
-            <scope>provided</scope>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>${freemarker.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
         <dependency>
